@@ -44,6 +44,16 @@ Verificare che dati, stati e risultati rimangano coerenti lungo l'intero ciclo d
 - chiarezza degli errori;
 - persistenza delle bozze.
 
+### 6. User Acceptance Testing
+
+- coinvolgimento di utenti diversi dall'analista che conoscano il processo operativo;
+- esecuzione di attività end-to-end senza suggerimenti durante il test;
+- raccolta separata di anomalie, difficoltà di comprensione e bisogni non coperti;
+- confronto tra comportamento atteso e comportamento osservato;
+- tracciamento dei feedback e della decisione di recepirli, rinviarli o scartarli.
+
+L'UAT serve a verificare non soltanto che la soluzione funzioni, ma che risponda alle esigenze di chi dovrà utilizzarla.
+
 ## Scenari prioritari
 
 | ID | Scenario | Risultato atteso |
@@ -55,6 +65,9 @@ Verificare che dati, stati e risultati rimangano coerenti lungo l'intero ciclo d
 | TS-05 | Movimento in attesa | saldo disponibile non alterato definitivamente |
 | TS-06 | Promozione scaduta | attività evidenziata come non completata |
 | TS-07 | Import duplicato | record duplicati intercettati o segnalati |
+| TS-08 | Completamento end-to-end da parte di un nuovo utente | flusso concluso senza assistenza bloccante |
+| TS-09 | Individuazione di attività aperte e scadenze | elementi prioritari riconosciuti correttamente |
+| TS-10 | Riconciliazione di un saldo su scenario reale | differenza ricostruita e spiegabile |
 
 ## Rischi principali
 
@@ -71,4 +84,6 @@ Verificare che dati, stati e risultati rimangano coerenti lungo l'intero ciclo d
 - nessuna anomalia critica sui consolidati;
 - differenze di saldo spiegabili;
 - flussi principali completabili da smartphone;
-- regressione sui casi già consolidati.
+- regressione sui casi già consolidati;
+- UAT completata con utenti diversi dall'analista;
+- feedback bloccanti risolti o esplicitamente documentati.
