@@ -12,7 +12,8 @@ L'evoluzione procede dalla qualità del dato verso l'automazione. Ogni fase dipe
 - promozioni, memo e scadenze;
 - saldi, movimenti e riconciliazioni;
 - import iniziale;
-- dashboard e report mensili.
+- dashboard e report mensili;
+- feedback strutturato e UAT con utenti diversi dall'analista.
 
 ## Fase 2 — Ricerca quote
 
@@ -63,4 +64,4 @@ flowchart TD
 
 ## Criterio di avanzamento
 
-Una fase può essere considerata pronta quando i flussi principali sono verificati, le eccezioni critiche sono gestite e il risultato rimane riconciliabile.
+Una fase può essere considerata pronta quando i flussi principali sono verificati anche da utenti diversi dall'analista, le eccezioni critiche sono gestite e il risultato rimane riconciliabile.
