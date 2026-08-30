@@ -57,3 +57,12 @@
 **Decisione:** non vincolare il dominio del Profit Tracker a uno specifico provider. L'integrazione sarà progettata attraverso un livello di astrazione sostituibile e il provider della Fase 2 verrà selezionato sulla base del miglior rapporto tra copertura, qualità del dato, limiti di consumo e costo effettivo.
 
 **Conseguenza:** la fonte quote potrà essere sostituita senza riprogettare il modello funzionale del prodotto e senza introdurre vendor lock-in prematuro.
+
+
+## ADR-009 — Validazione con utenti diversi dall'analista
+
+**Contesto:** nelle prime fasi del progetto la stessa persona ricopre il ruolo di utilizzatore e analista. Questo accelera la comprensione del bisogno, ma aumenta il rischio di confermare le proprie assunzioni.
+
+**Decisione:** coinvolgere un piccolo gruppo di utenti che conoscono il processo, raccogliere feedback strutturati ed eseguire una fase di User Acceptance Testing su scenari reali.
+
+**Conseguenza:** l'MVP non verrà considerato validato sulla sola auto-valutazione. Anomalie, difficoltà d'uso e bisogni non coperti emersi durante l'UAT saranno tracciati e prioritizzati.
