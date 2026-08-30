@@ -45,3 +45,15 @@
 **Decisione:** il case study pubblico non conterrà collegamenti all'applicazione navigabile.
 
 **Motivazione:** il progetto rimane personale; la finalità pubblica è mostrare il processo di analisi, non offrire un servizio.
+
+## ADR-008 — Strategia per le API quote
+
+**Esigenza:** alimentare in una fase successiva oddsmatcher e flussi assistiti con quote provenienti da fonti esterne.
+
+**Valutazione:** sono stati analizzati provider specializzati considerando copertura di bookmaker e mercati, frequenza di aggiornamento, disponibilità di mercati complessi, limiti di chiamata, costo e scalabilità rispetto al volume d'uso previsto.
+
+**Provider valutato:** OpticOdds è stato incluso nel confronto come possibile fonte dati. La valutazione ha evidenziato che un piano nell'ordine di 79 €/mese con circa 500 richieste può risultare sovradimensionato nel costo e contemporaneamente restrittivo nei volumi per un progetto personale utilizzato inizialmente da un numero molto limitato di utenti.
+
+**Decisione:** non vincolare il dominio del Profit Tracker a uno specifico provider. L'integrazione sarà progettata attraverso un livello di astrazione sostituibile e il provider della Fase 2 verrà selezionato sulla base del miglior rapporto tra copertura, qualità del dato, limiti di consumo e costo effettivo.
+
+**Conseguenza:** la fonte quote potrà essere sostituita senza riprogettare il modello funzionale del prodotto e senza introdurre vendor lock-in prematuro.
