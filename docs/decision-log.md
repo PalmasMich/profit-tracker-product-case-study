@@ -1,10 +1,12 @@
 # Decision log
 
-## ADR-001 — Repository pubblico separato
+## ADR-001 — Separazione tra documentazione e applicazione
 
-**Decisione:** creare un repository documentale separato dal codice dell'applicazione.
+**Decisione:** mantenere la documentazione di prodotto in un repository separato dal codice dell'applicazione.
 
-**Motivazione:** mostrare competenze di analisi funzionale senza esporre sorgenti, configurazioni, ambienti o dati.
+**Motivazione:** applicare una separazione netta delle responsabilità e impedire che sorgenti, configurazioni, ambienti, credenziali o dati reali siano inclusi nel perimetro documentale.
+
+**Conseguenza:** il repository documentale può evolvere indipendentemente dall'applicazione e contiene soltanto artefatti esplicitamente selezionati.
 
 ## ADR-002 — Mobile first
 
@@ -40,11 +42,13 @@
 
 **Motivazione:** automatizzare un processo non ancora stabile amplifica errori e rende più difficile verificarli.
 
-## ADR-007 — Nessuna esposizione del sito reale
+## ADR-007 — Applicazione non esposta
 
-**Decisione:** il case study pubblico non conterrà collegamenti all'applicazione navigabile.
+**Decisione:** la documentazione non contiene collegamenti all'applicazione navigabile.
 
-**Motivazione:** il progetto rimane personale; la finalità pubblica è mostrare il processo di analisi, non offrire un servizio.
+**Motivazione:** limitare il perimetro accessibile, proteggere dati e configurazioni operative ed evitare che un ambiente personale venga interpretato o utilizzato come servizio disponibile.
+
+**Conseguenza:** esempi e schermate utilizzano esclusivamente dati di test e non consentono di accedere all'ambiente reale.
 
 ## ADR-008 — Strategia per le API quote
 
