@@ -49,7 +49,7 @@ Nelle prime fasi del progetto l'analista coincide con l'utente. Questa conoscenz
 | [Strategia di test](docs/test-strategy.md) | Scenari, rischi, UAT ed exit criteria |
 | [Decision log](docs/decision-log.md) | Decisioni di prodotto, valutazione provider e alternative scartate |
 | [Glossario](docs/glossary.md) | Terminologia essenziale |
-| [Presentazione del case study](assets/profit-tracker-case-study-linkedin.pdf) | Sintesi visuale in 8 slide |
+| [Presentazione del case study](assets/profit-tracker-case-study.pdf) | Sintesi visuale in 8 slide |
 
 ## Roadmap sintetica
 
