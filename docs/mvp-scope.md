@@ -61,3 +61,5 @@ Validare il modello funzionale e creare una base dati unica, consultabile e rico
 ## Criterio di successo dell'MVP
 
 L'MVP è valido quando un utente può ricostruire il proprio risultato mensile e spiegare la differenza tra saldo atteso e saldo disponibile senza ricorrere ai fogli Excel precedenti.
+
+La validazione non si basa sulla sola auto-valutazione dell'analista: include una fase di UAT con utenti diversi, basata su scenari reali e feedback tracciati.
