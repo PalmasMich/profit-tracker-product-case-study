@@ -29,7 +29,12 @@ Il progetto è affrontato con il metodo dell'Analista Funzionale:
 3. modellazione di entità, stati e relazioni;
 4. prioritizzazione tra MVP, evolutive e dipendenze;
 5. verifica dei flussi, degli edge case e dei criteri di accettazione;
-6. valutazione delle dipendenze esterne, inclusi provider API, costi, limiti di utilizzo e rischio di vendor lock-in.
+6. valutazione delle dipendenze esterne, inclusi provider API, costi, limiti di utilizzo e rischio di vendor lock-in;
+7. validazione con utenti diversi dall'analista attraverso feedback e UAT su scenari reali.
+
+## Validazione con utenti
+
+Nelle prime fasi del progetto l'analista coincide con l'utente. Questa conoscenza diretta accelera la comprensione del problema, ma può anche confermare assunzioni non generalizzabili. Il passo successivo prevede il coinvolgimento di un piccolo gruppo di utilizzatori che conoscono il processo, la raccolta strutturata dei feedback e una fase di User Acceptance Testing su scenari reali.
 
 ## Mappa del case study
 
@@ -41,7 +46,7 @@ Il progetto è affrontato con il metodo dell'Analista Funzionale:
 | [User flow](docs/user-flows.md) | Flussi principali e gestione delle eccezioni |
 | [Modello funzionale](docs/data-model.md) | Entità, relazioni e stati principali |
 | [Roadmap](docs/roadmap.md) | Evoluzione dal controllo del dato all'automazione e strategia API |
-| [Strategia di test](docs/test-strategy.md) | Scenari, rischi ed edge case |
+| [Strategia di test](docs/test-strategy.md) | Scenari, rischi, UAT ed exit criteria |
 | [Decision log](docs/decision-log.md) | Decisioni di prodotto, valutazione provider e alternative scartate |
 | [Glossario](docs/glossary.md) | Terminologia essenziale |
 | [Presentazione del case study](assets/profit-tracker-case-study-linkedin.pdf) | Sintesi visuale in 8 slide |
