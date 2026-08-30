@@ -1,0 +1,8 @@
+# This repository intentionally contains documentation only.
+.DS_Store
+Thumbs.db
+.env*
+*.log
+node_modules/
+dist/
+build/
