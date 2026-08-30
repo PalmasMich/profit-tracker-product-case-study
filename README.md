@@ -28,7 +28,8 @@ Il progetto è affrontato con il metodo dell'Analista Funzionale:
 2. definizione di requisiti, casi d'uso e regole;
 3. modellazione di entità, stati e relazioni;
 4. prioritizzazione tra MVP, evolutive e dipendenze;
-5. verifica dei flussi, degli edge case e dei criteri di accettazione.
+5. verifica dei flussi, degli edge case e dei criteri di accettazione;
+6. valutazione delle dipendenze esterne, inclusi provider API, costi, limiti di utilizzo e rischio di vendor lock-in.
 
 ## Mappa del case study
 
@@ -39,21 +40,22 @@ Il progetto è affrontato con il metodo dell'Analista Funzionale:
 | [Requisiti funzionali](docs/functional-requirements.md) | Epic, requisiti e criteri di accettazione |
 | [User flow](docs/user-flows.md) | Flussi principali e gestione delle eccezioni |
 | [Modello funzionale](docs/data-model.md) | Entità, relazioni e stati principali |
-| [Roadmap](docs/roadmap.md) | Evoluzione dal controllo del dato all'automazione |
+| [Roadmap](docs/roadmap.md) | Evoluzione dal controllo del dato all'automazione e strategia API |
 | [Strategia di test](docs/test-strategy.md) | Scenari, rischi ed edge case |
-| [Decision log](docs/decision-log.md) | Decisioni di prodotto e alternative scartate |
+| [Decision log](docs/decision-log.md) | Decisioni di prodotto, valutazione provider e alternative scartate |
 | [Glossario](docs/glossary.md) | Terminologia essenziale |
-| [LinkedIn post](social/linkedin-post.md) | Testo del post e primo commento |
-| [Carosello](social/carousel-outline.md) | Sequenza narrativa delle slide |
+| [Presentazione del case study](assets/profit-tracker-case-study-linkedin.pdf) | Sintesi visuale in 8 slide |
 
 ## Roadmap sintetica
 
 ```mermaid
 flowchart LR
-    A["Profit Tracker"] --> B["Ricerca quote"]
+    A["Profit Tracker"] --> B["Ricerca quote via API"]
     B --> C["Flussi avanzati"]
     C --> D["Multipla progressiva"]
 ```
+
+La fase di integrazione con quote esterne è stata impostata per rimanere indipendente dal singolo provider. Lo scouting ha già incluso soluzioni specializzate come OpticOdds, valutate rispetto a copertura, qualità del dato, limiti di chiamata, costo e sostenibilità per il volume d'uso previsto.
 
 ## Nota sul matched betting
 
@@ -65,4 +67,4 @@ Questo repository non propone scommesse, strategie commerciali o promesse di gua
 
 **Michael Palmas — Functional Analyst**
 
-_English summary: a public, documentation-only case study showing how a real mobile-first need was translated into product vision, functional requirements, user flows, data model, testing strategy and roadmap. Application source code and live environments remain private._
+_English summary: a public, documentation-only case study showing how a real mobile-first need was translated into product vision, functional requirements, user flows, data model, testing strategy, API/vendor evaluation and roadmap. Application source code and live environments remain private._
